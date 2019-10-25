@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   broker-config: "registry:\n\n  - type: local_openshift\n    name: localregistry\n
-    \   namespaces: ['ansible-service-broker']\n    white_list: [.*-apb$]\n
+    \   namespaces: ['openshift','ansible-service-broker']\n    white_list: [.*-apb$]\n
     \   \n\ndao:\n  type: crd\nlog:\n  stdout: true\n  level: info\n  color: true\nopenshift:\n
     \ host: \"\"\n  ca_file: \"\"\n  bearer_token_file: \"\"\n  namespace: openshift-ansible-service-broker\n
     \ sandbox_role: edit\n  image_pull_policy: Always\n  keep_namespace: false\n  keep_namespace_on_error:
@@ -16,6 +16,6 @@ metadata:
     app: openshift-ansible-service-broker
   name: broker-config
   namespace: openshift-ansible-service-broker
-  resourceVersion: "2299451"
+
   selfLink: /api/v1/namespaces/openshift-ansible-service-broker/configmaps/broker-config
   uid: 76d7a42a-ed7b-11e9-af17-063aeea7405a
