@@ -11,11 +11,11 @@ data:
     \ auto_escalate: False\n  auth:\n    - type: basic\n      enabled: false\n"
 kind: ConfigMap
 metadata:
-  creationTimestamp: 2019-10-13T05:36:54Z
+
   labels:
     app: openshift-ansible-service-broker
   name: broker-config
   namespace: openshift-ansible-service-broker
 
   selfLink: /api/v1/namespaces/openshift-ansible-service-broker/configmaps/broker-config
-  uid: 76d7a42a-ed7b-11e9-af17-063aeea7405a
+
